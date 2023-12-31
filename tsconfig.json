@@ -1,11 +1,13 @@
 {
   "compilerOptions": {
-    "target": "es2015",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "target": "es2019",
+    // "lib": [
+    //   "dom",
+    //   "dom.iterable",
+    //   "esnext"
+    // ],
+    "declaration": true,
+    "outDir": "./dist",
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
@@ -21,22 +23,20 @@
     "baseUrl": "." /* Base directory to resolve non-absolute module names. */,
     "paths": {
       "@/components/*": [
-        "./components/*"
+        "src/components/*"
       ],
       "@/lib/*": [
-        "./lib/*"
+        "src/lib/*"
       ],
 
     },
     
   },
   "include": [
-    "next-env.d.ts",
-    "**/*.ts",
-    "**/*.tsx",
-    ".next/types/**/*.ts"
+      "src/**/*"
   ],
   "exclude": [
-    "node_modules"
+    "node_modules",
+    
   ]
 }

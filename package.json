@@ -2,8 +2,14 @@
   "name": "mantine-extensions",
   "version": "1.0.0",
   "description": "Mantine component extensions.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "/dist"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc -p .",
+    "start": "npm run build -- -w"
   },
   "author": "",
   "license": "ISC",
@@ -12,7 +18,8 @@
     "@mantine/dates": "^7.3.2",
     "dayjs": "^1.11.10",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "typescript": "^5.3.3"
   },
   "devDependencies": {
     "@types/react": "^18.2.46"
