@@ -1,6 +1,6 @@
 import React from 'react';
 import { DatePickerInput, DatePickerInputProps, DateValue, DatesRangeValue } from '@mantine/dates';
-import { dayjsNeutral } from 'src/lib/dateFunctions';
+import { dayjsNeutral } from '@/lib/dateFunctions';
 
 // note: DateValue = Date | null
 // but DatePicker input needs Date | undefined

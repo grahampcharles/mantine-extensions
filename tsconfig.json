@@ -7,36 +7,34 @@
     //   "esnext"
     // ],
     "declaration": true,
+    "declarationMap": true,
+    "rootDir": ".",
+    "composite": true,
     "outDir": "./dist",
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
-    "forceConsistentCasingInFileNames": true,
-    "noEmit": true,
-    "esModuleInterop": true,
+    "esModuleInterop": true, "jsx": "preserve",
     "module": "esnext",
     "moduleResolution": "node",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "jsx": "preserve",
-    "incremental": true,
     "baseUrl": "." /* Base directory to resolve non-absolute module names. */,
     "paths": {
       "@/components/*": [
-        "src/components/*"
+        "components/*"
       ],
       "@/lib/*": [
-        "src/lib/*"
+        "lib/*"
       ],
 
     },
     
   },
   "include": [
-      "src/**/*"
+      "**/*"
   ],
   "exclude": [
     "node_modules",
-    
-  ]
+    "dist"
+  ], 
+  "references": []
 }
